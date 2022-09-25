@@ -1,0 +1,17 @@
+.link {
+  border-bottom: .1rem solid transparent;
+  color: var(--link-color);
+  text-decoration: none;
+  line-height: 1.2;
+  transition: opacity var(--transition-duration), border-bottom-color var(--transition-duration);
+
+  @media (min-width: 1024px) {
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom-color: currentColor;
+      color: var(--link-color);
+      opacity: .85;
+    }
+  }
+}

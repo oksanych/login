@@ -1,0 +1,52 @@
+.button {
+  width: 100%;
+  padding: 1.5rem .5rem;
+  border: .1rem solid var(--button-border-color);
+  border-radius: var(--border-radius-m);
+  color: var(--white);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--button-bg-color);
+  transition: opacity var(--transition-duration);
+  cursor: pointer;
+
+  &--social {
+    padding: 1.2rem .5rem;
+    text-transform: capitalize;
+  }
+
+  &--facebook {
+    border-color: var(--blue-38);
+    background-color: var(--blue-38);
+  }
+
+  &--google {
+    border-color: var(--red);
+    background-color: var(--red);
+  }
+
+  @media (min-width: 1024px) {
+    &:focus,
+    &:hover,
+    &:active {
+      outline: none;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: .85;
+    }
+  }
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+
+  .button {
+    &:not(:last-child) {
+      margin-right: 1.4rem;
+    }
+  }
+}

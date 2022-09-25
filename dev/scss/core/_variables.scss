@@ -1,0 +1,62 @@
+:root {
+  // Color palette
+  // --------------------------
+
+  // Black
+  --black: #000;
+
+  //Blue
+  --blue-1a: #1a4f8b;
+  --blue-38: #385c8e;
+
+  //Gray
+  --gray-b0: #b0b0b0;
+  --gray-c3: #c3c3c3;
+  --gray-76: #767676;
+  --gray-ae: #aeaeae;
+
+  // White
+  --white-smoke: #f2f2f2;
+  --white: #fff;
+
+  //Red
+  --red: #f14436;
+
+  // Color variables
+  // --------------------------
+  --color-primary: var(--blue-1a);
+
+  // Fonts
+  // --------------------------
+  --font-primary: 'Roboto', arial, sans-serif;
+
+  // Border
+  // --------------------------
+  --border-radius-s: .5rem;
+  --border-radius-m: .8rem;
+
+  //Transition
+  // --------------------------
+  --transition-duration: 0.25s;
+
+  // Form
+  // --------------------------
+  --field-color: var(--gray-76);
+  --field-color-focus: var(--color-primary);
+  --field-border-color: var(--gray-c3);
+  --field-border-color-focus: var(--color-primary);
+  --field-icon-fill: var(--gray-ae);
+  --field-icon-fill-focus: var(--color-primary);
+
+  // Button
+  // --------------------------
+  --button-border-color: var(--color-primary);
+  --button-bg-color: var(--color-primary);
+
+  // Link
+  // --------------------------
+  --link-color: var(--color-primary);
+}
+
+
+

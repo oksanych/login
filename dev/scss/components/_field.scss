@@ -1,0 +1,52 @@
+// Input field
+// --------------------------
+
+.field {
+  width: 100%;
+  padding: 1.6rem 1.5rem;
+  border: .1rem solid var(--field-border-color);
+  border-radius: var(--border-radius-s);
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  color: var(--field-color);
+  line-height: 1;
+  transition: border-color var(--transition-duration);
+  will-change: color, border-color;
+  appearance: none;
+
+  &--icon {
+    padding-left: 4.6rem;
+
+    + svg {
+      transition: all var(--transition-duration);
+      will-change: all;
+    }
+  }
+
+  &:focus,
+  &:active {
+    border-color: var(--field-border-color-focus);
+    outline: none;
+
+    &.field--icon {
+      + svg {
+        fill: var(--field-icon-fill-focus);
+      }
+    }
+
+    &::placeholder {
+      color: var(--field-color-focus);
+    }
+  }
+}
+
+.field-icon {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 1.3rem;
+    left: 1.2rem;
+    fill: var(--field-icon-fill);
+  }
+}
